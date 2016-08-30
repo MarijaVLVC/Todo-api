@@ -63,6 +63,38 @@ app.delete('/todos/:id', function (req, res) {
 	}
 });
 
+// PUT/todos/:id
+app.put('/todos/:id', function  (req, res) {
+	var todoId = parseInt(req.params.id, 10);
+	var matchedTodo = _.findWhere(todos, {id: todoId});
+	var body = _.pick(req.body, 'description', 'complited');
+	var validAttributes = {};
+
+	if (!matchedTodo) {
+		return res.status(404).send();
+	}
+
+	// body.hasOwnProperty('complited');
+
+	if (body.hasOwnProperty('complited') && _.isBoolean(body.complited)) {
+		validAttributes.complited = body.complited;
+	} else if (body.hasOwnProperty('complited')) {
+		return res.status(400).send();
+	} 
+
+	if (body.hasOwnProperty('descrition') && _.isString(body.descrition) && body.descrition.trim().length > 0) {
+		validAttributes.descrition = body.descrition;
+	} else if (body.hasOwnProperty('descrition')) {
+		return res.status(400).send();
+	}
+
+	// HERE
+
+	 _.extend(matchedTodo, validAttributes);
+	 res.json(matchedTodo);
+});
+
+
 app.listen(PORT, function () {
 	console.log('Express listening on port ' + PORT + '!');
 });
