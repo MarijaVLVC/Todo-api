@@ -14,28 +14,47 @@ app.get('/', function (req, res) {
 	res.send('TODO API Root');
 });
 
-// GET /todos
+// GET /todos?complited=false&q=work
 app.get('/todos', function (req, res) {
-	var queryParams = req.query;
-	var filteredTodos = todos;
+	var query = req.query;
+	var where = {}; 
 
-	// if has property && complited === 'true'
-	// filteredTodos == _.where(filteredTodos, ?)
-	// else id has prop && complited if 'false'
-
-	if (queryParams.hasOwnProperty('complited') && queryParams.complited === 'true') {
-		filteredTodos = _.where(filteredTodos, {complited:true});
-	} else if  (queryParams.hasOwnProperty('complited') && queryParams.complited === '˙false') {
-		filteredTodos = _.where(filteredTodos, {complited:false});
+	if (query.hasOwnProperty('complited') && query.complited === 'true') {
+		where.complited = true;
+	} else if (query.hasOwnProperty('complited') && query.complited === 'false') {
+		where.complited = false;
 	}
 
-	if (queryParams.hasOwnProperty('q') && queryParams.q.length > 0) {
-		filteredTodos = _.filter(filteredTodos, function (todo) {
-			return todo.description.toLowerCase().indexOf(queryParams.q.toLowerCase()) > -1;
-		});
+	if (query.hasOwnProperty('q') && query.q.length > 0 ) {
+		where.description = {
+			$like: '%' + query.q + '%'
+		};
 	}
 
-	res.json(filteredTodos); 
+	db.todo.findAll({where: where}).then(function () {
+		res.json(todos);
+	}, function (e) {
+		res.status(500).send();
+	});
+	// var filteredTodos = todos;
+
+	// // if has property && complited === 'true'
+	// // filteredTodos == _.where(filteredTodos, ?)
+	// // else id has prop && complited if 'false'
+
+	// if (queryParams.hasOwnProperty('complited') && queryParams.complited === 'true') {
+	// 	filteredTodos = _.where(filteredTodos, {complited:true});
+	// } else if  (queryParams.hasOwnProperty('complited') && queryParams.complited === '˙false') {
+	// 	filteredTodos = _.where(filteredTodos, {complited:false});
+	// }
+
+	// if (queryParams.hasOwnProperty('q') && queryParams.q.length > 0) {
+	// 	filteredTodos = _.filter(filteredTodos, function (todo) {
+	// 		return todo.description.toLowerCase().indexOf(queryParams.q.toLowerCase()) > -1;
+	// 	});
+	// }
+
+	// res.json(filteredTodos); 
 });
 // GET /todos/: id
 app.get('/todos/:id', function (req, res) {
