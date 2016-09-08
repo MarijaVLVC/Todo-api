@@ -7,7 +7,7 @@ if (env = 'production') {
 		dialect: 'postgres'
 	});
 } else {
-     sequelize = new Sequelize(undefined, undefined, undefined, {
+     sequelize = new Sequelize (undefined, undefined, undefined, {
 	'dialect': 'sqlite',
 	'storage': __dirname + '/data/dev-todo-api.sqlite'
 });
@@ -18,6 +18,7 @@ if (env = 'production') {
 var db = {};
 
 db.todo = sequelize.import(__dirname + '/models/todo.js');
+db.user = sequelize.import(__dirname + '/models/user.js')
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
