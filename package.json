@@ -1,21 +1,33 @@
 {
   "name": "todo-api",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "0.8.5",
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.13.3",
     "express": "^4.13.3",
     "pg": "^4.4.1",
     "pg-hstore": "^2.3.2",
-    "sequelize": "^3.5.1",
+    "sequelize": "^3.24.2",
     "sqlite3": "^3.1.4",
     "underscore": "^1.8.3",
     "url-parse": "^1.1.3"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarijaVLVC/Todo-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MarijaVLVC/Todo-api/issues"
+  },
+  "homepage": "https://github.com/MarijaVLVC/Todo-api#readme",
+  "description": ""
 }
