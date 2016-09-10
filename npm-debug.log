@@ -1,554 +1,587 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'install',
-1 verbose cli   'bcrypt',
-1 verbose cli   '--save' ]
+1 verbose cli   'install' ]
 2 info using npm@2.14.12
 3 info using node@v4.2.4
-4 verbose install initial load of C:\Users\maja\Desktop\node-course\todo-api\package.json
+4 verbose readDependencies loading dependencies from C:\Users\maja\Desktop\node-course\todo-api\package.json
 5 warn package.json todo-api@1.0.0 No description
 6 warn package.json todo-api@1.0.0 No README data
-7 verbose installManyTop reading scoped package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt-nodejs\package.json
-8 verbose installManyTop reading scoped package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\body-parser\package.json
-9 verbose installManyTop reading scoped package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\express\package.json
-10 verbose installManyTop reading scoped package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\node-gyp\package.json
-11 verbose installManyTop reading scoped package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\pg\package.json
-12 verbose installManyTop reading scoped package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\pg-hstore\package.json
-13 verbose installManyTop reading scoped package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\sequelize\package.json
-14 verbose installManyTop reading scoped package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\sqlite3\package.json
-15 verbose installManyTop reading scoped package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\underscore\package.json
-16 verbose installManyTop reading scoped package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\url-parse\package.json
-17 info package.json url-parse@1.1.3 No README data
-18 info package.json bcrypt-nodejs@0.0.3 No license field.
-19 info package.json pg-hstore@2.3.2 No license field.
-20 verbose readDependencies loading dependencies from C:\Users\maja\Desktop\node-course\todo-api\package.json
-21 silly cache add args [ 'bcrypt@0.8.5', null ]
-22 verbose cache add spec bcrypt@0.8.5
-23 silly cache add parsed spec Result {
-23 silly cache add   raw: 'bcrypt@0.8.5',
-23 silly cache add   scope: null,
-23 silly cache add   name: 'bcrypt',
-23 silly cache add   rawSpec: '0.8.5',
-23 silly cache add   spec: '0.8.5',
-23 silly cache add   type: 'version' }
-24 silly addNamed bcrypt@0.8.5
-25 verbose addNamed "0.8.5" is a plain semver version for bcrypt
-26 silly mapToRegistry name bcrypt
-27 silly mapToRegistry using default registry
-28 silly mapToRegistry registry https://registry.npmjs.org/
-29 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
-30 verbose addNameVersion registry:https://registry.npmjs.org/bcrypt not in flight; fetching
-31 verbose request uri https://registry.npmjs.org/bcrypt
-32 verbose request no auth needed
-33 info attempt registry request try #1 at 1:10:58 PM
-34 verbose request id 196d9d9236be64ed
-35 verbose etag "398F192FUE7FBCG521B59OFYJ"
-36 http request GET https://registry.npmjs.org/bcrypt
-37 http 304 https://registry.npmjs.org/bcrypt
-38 verbose headers { date: 'Thu, 08 Sep 2016 11:11:03 GMT',
-38 verbose headers   via: '1.1 varnish',
-38 verbose headers   'cache-control': 'max-age=300',
-38 verbose headers   etag: '"398F192FUE7FBCG521B59OFYJ"',
-38 verbose headers   age: '221',
-38 verbose headers   connection: 'keep-alive',
-38 verbose headers   'x-served-by': 'cache-lcy1135-LCY',
-38 verbose headers   'x-cache': 'HIT',
-38 verbose headers   'x-cache-hits': '1',
-38 verbose headers   'x-timer': 'S1473333063.681851,VS0,VE0',
-38 verbose headers   vary: 'Accept-Encoding' }
-39 silly get cb [ 304,
-39 silly get   { date: 'Thu, 08 Sep 2016 11:11:03 GMT',
-39 silly get     via: '1.1 varnish',
-39 silly get     'cache-control': 'max-age=300',
-39 silly get     etag: '"398F192FUE7FBCG521B59OFYJ"',
-39 silly get     age: '221',
-39 silly get     connection: 'keep-alive',
-39 silly get     'x-served-by': 'cache-lcy1135-LCY',
-39 silly get     'x-cache': 'HIT',
-39 silly get     'x-cache-hits': '1',
-39 silly get     'x-timer': 'S1473333063.681851,VS0,VE0',
-39 silly get     vary: 'Accept-Encoding' } ]
-40 verbose etag https://registry.npmjs.org/bcrypt from cache
-41 verbose get saving bcrypt to C:\Users\maja\AppData\Roaming\npm-cache\registry.npmjs.org\bcrypt\.cache.json
-42 silly cache afterAdd bcrypt@0.8.5
-43 verbose afterAdd C:\Users\maja\AppData\Roaming\npm-cache\bcrypt\0.8.5\package\package.json not in flight; writing
-44 verbose afterAdd C:\Users\maja\AppData\Roaming\npm-cache\bcrypt\0.8.5\package\package.json written
-45 silly install resolved [ { name: 'bcrypt',
-45 silly install resolved     description: 'A bcrypt library for NodeJS.',
-45 silly install resolved     keywords:
-45 silly install resolved      [ 'bcrypt',
-45 silly install resolved        'password',
-45 silly install resolved        'auth',
-45 silly install resolved        'authentication',
-45 silly install resolved        'encryption',
-45 silly install resolved        'crypt',
-45 silly install resolved        'crypto' ],
-45 silly install resolved     main: './bcrypt',
-45 silly install resolved     version: '0.8.5',
-45 silly install resolved     author: { name: 'Nick Campbell', url: 'https://github.com/ncb000gt' },
-45 silly install resolved     engines: { node: '>= 0.6.0' },
-45 silly install resolved     repository:
-45 silly install resolved      { type: 'git',
-45 silly install resolved        url: 'git+https://github.com/ncb000gt/node.bcrypt.js.git' },
-45 silly install resolved     license: 'MIT',
-45 silly install resolved     bugs: { url: 'https://github.com/ncb000gt/node.bcrypt.js/issues' },
-45 silly install resolved     scripts:
-45 silly install resolved      { test: 'node-gyp configure build && nodeunit test',
-45 silly install resolved        install: 'node-gyp rebuild' },
-45 silly install resolved     dependencies: { bindings: '1.2.1', nan: '2.0.5' },
-45 silly install resolved     devDependencies: { nodeunit: '~0.9.1' },
-45 silly install resolved     contributors:
-45 silly install resolved      [ [Object],
-45 silly install resolved        [Object],
-45 silly install resolved        [Object],
-45 silly install resolved        [Object],
-45 silly install resolved        [Object],
-45 silly install resolved        [Object],
-45 silly install resolved        [Object],
-45 silly install resolved        [Object],
-45 silly install resolved        [Object],
-45 silly install resolved        [Object],
-45 silly install resolved        [Object],
-45 silly install resolved        [Object],
-45 silly install resolved        [Object],
-45 silly install resolved        [Object] ],
-45 silly install resolved     gypfile: true,
-45 silly install resolved     gitHead: '5d97708f06754d7d7989c67ba867002d10013615',
-45 silly install resolved     homepage: 'https://github.com/ncb000gt/node.bcrypt.js#readme',
-45 silly install resolved     _id: 'bcrypt@0.8.5',
-45 silly install resolved     _shasum: '8e5b81b4db80e944f440005979ca8d58a961861d',
-45 silly install resolved     _from: 'bcrypt@0.8.5',
-45 silly install resolved     _npmVersion: '2.13.3',
-45 silly install resolved     _nodeVersion: '3.0.0',
-45 silly install resolved     _npmUser: { name: 'defunctzombie', email: 'shtylman@gmail.com' },
-45 silly install resolved     dist:
-45 silly install resolved      { shasum: '8e5b81b4db80e944f440005979ca8d58a961861d',
-45 silly install resolved        tarball: 'https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.5.tgz' },
-45 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
-45 silly install resolved     directories: {},
-45 silly install resolved     _resolved: 'https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.5.tgz',
-45 silly install resolved     readme: 'ERROR: No README data found!' } ]
-46 info install bcrypt@0.8.5 into C:\Users\maja\Desktop\node-course\todo-api
-47 info installOne bcrypt@0.8.5
-48 verbose installOne of bcrypt to C:\Users\maja\Desktop\node-course\todo-api not in flight; installing
-49 verbose lock using C:\Users\maja\AppData\Roaming\npm-cache\_locks\bcrypt-c4ff5668c553f3fe.lock for C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
-50 silly install write writing bcrypt 0.8.5 to C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
-51 verbose unbuild node_modules\bcrypt
-52 silly gentlyRm C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt is being purged from base C:\Users\maja\Desktop\node-course\todo-api
-53 verbose gentlyRm don't care about contents; nuking C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
-54 verbose tar unpack C:\Users\maja\AppData\Roaming\npm-cache\bcrypt\0.8.5\package.tgz
-55 verbose tar unpacking to C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
-56 silly gentlyRm C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt is being purged
-57 verbose gentlyRm don't care about contents; nuking C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
-58 silly gunzTarPerm modes [ '777', '666' ]
-59 silly gunzTarPerm extractEntry package.json
-60 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
-61 silly gunzTarPerm extractEntry .npmignore
-62 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
-63 silly gunzTarPerm extractEntry README.md
-64 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
-65 silly gunzTarPerm extractEntry LICENSE
-66 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
-67 silly gunzTarPerm extractEntry bcrypt.js
-68 silly gunzTarPerm modified mode [ 'bcrypt.js', 420, 438 ]
-69 silly gunzTarPerm extractEntry binding.gyp
-70 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
-71 silly gunzTarPerm extractEntry .travis.yml
-72 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
-73 silly gunzTarPerm extractEntry CHANGELOG.md
-74 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
-75 silly gunzTarPerm extractEntry examples/async_compare.js
-76 silly gunzTarPerm modified mode [ 'examples/async_compare.js', 420, 438 ]
-77 silly gunzTarPerm extractEntry examples/forever_gen_salt.js
-78 silly gunzTarPerm modified mode [ 'examples/forever_gen_salt.js', 420, 438 ]
-79 silly gunzTarPerm extractEntry test/async.js
-80 silly gunzTarPerm modified mode [ 'test/async.js', 420, 438 ]
-81 silly gunzTarPerm extractEntry test/repetitions.js
-82 silly gunzTarPerm modified mode [ 'test/repetitions.js', 420, 438 ]
-83 silly gunzTarPerm extractEntry test/sync.js
-84 silly gunzTarPerm modified mode [ 'test/sync.js', 420, 438 ]
-85 silly gunzTarPerm extractEntry Makefile
-86 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
-87 silly gunzTarPerm extractEntry src/bcrypt.cc
-88 silly gunzTarPerm modified mode [ 'src/bcrypt.cc', 420, 438 ]
-89 silly gunzTarPerm extractEntry src/bcrypt_node.cc
-90 silly gunzTarPerm modified mode [ 'src/bcrypt_node.cc', 420, 438 ]
-91 silly gunzTarPerm extractEntry src/blowfish.cc
-92 silly gunzTarPerm modified mode [ 'src/blowfish.cc', 420, 438 ]
-93 silly gunzTarPerm extractEntry src/node_blf.h
-94 silly gunzTarPerm modified mode [ 'src/node_blf.h', 420, 438 ]
-95 silly gunzTarPerm extractEntry werker.yml
-96 silly gunzTarPerm modified mode [ 'werker.yml', 420, 438 ]
-97 verbose write writing to C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\package.json
-98 info preinstall bcrypt@0.8.5
-99 verbose readDependencies loading dependencies from C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\package.json
-100 silly prepareForInstallMany adding bindings@1.2.1 from bcrypt dependencies
-101 silly prepareForInstallMany adding nan@2.0.5 from bcrypt dependencies
-102 verbose readDependencies loading dependencies from C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\package.json
-103 silly cache add args [ 'bindings@1.2.1', null ]
-104 verbose cache add spec bindings@1.2.1
-105 silly cache add args [ 'nan@2.0.5', null ]
-106 verbose cache add spec nan@2.0.5
-107 silly cache add parsed spec Result {
-107 silly cache add   raw: 'bindings@1.2.1',
-107 silly cache add   scope: null,
-107 silly cache add   name: 'bindings',
-107 silly cache add   rawSpec: '1.2.1',
-107 silly cache add   spec: '1.2.1',
-107 silly cache add   type: 'version' }
-108 silly addNamed bindings@1.2.1
-109 verbose addNamed "1.2.1" is a plain semver version for bindings
-110 silly mapToRegistry name bindings
-111 silly mapToRegistry using default registry
-112 silly mapToRegistry registry https://registry.npmjs.org/
-113 silly mapToRegistry uri https://registry.npmjs.org/bindings
-114 verbose addNameVersion registry:https://registry.npmjs.org/bindings not in flight; fetching
-115 silly cache add parsed spec Result {
-115 silly cache add   raw: 'nan@2.0.5',
-115 silly cache add   scope: null,
-115 silly cache add   name: 'nan',
-115 silly cache add   rawSpec: '2.0.5',
-115 silly cache add   spec: '2.0.5',
-115 silly cache add   type: 'version' }
-116 silly addNamed nan@2.0.5
-117 verbose addNamed "2.0.5" is a plain semver version for nan
-118 silly mapToRegistry name nan
-119 silly mapToRegistry using default registry
-120 silly mapToRegistry registry https://registry.npmjs.org/
-121 silly mapToRegistry uri https://registry.npmjs.org/nan
-122 verbose addNameVersion registry:https://registry.npmjs.org/nan not in flight; fetching
-123 verbose request uri https://registry.npmjs.org/bindings
-124 verbose request no auth needed
-125 info attempt registry request try #1 at 1:10:59 PM
-126 verbose etag "33TX4J3DNTGF7K41ZUV6OA182"
-127 http request GET https://registry.npmjs.org/bindings
-128 verbose request uri https://registry.npmjs.org/nan
-129 verbose request no auth needed
-130 info attempt registry request try #1 at 1:10:59 PM
-131 verbose etag "1OOZJAUMBQC59OINHZGMRRCSL"
-132 http request GET https://registry.npmjs.org/nan
-133 http 304 https://registry.npmjs.org/bindings
-134 verbose headers { date: 'Thu, 08 Sep 2016 11:11:04 GMT',
-134 verbose headers   via: '1.1 varnish',
-134 verbose headers   'cache-control': 'max-age=300',
-134 verbose headers   etag: '"33TX4J3DNTGF7K41ZUV6OA182"',
-134 verbose headers   age: '93',
-134 verbose headers   connection: 'keep-alive',
-134 verbose headers   'x-served-by': 'cache-lcy1135-LCY',
-134 verbose headers   'x-cache': 'HIT',
-134 verbose headers   'x-cache-hits': '2',
-134 verbose headers   'x-timer': 'S1473333064.258340,VS0,VE0',
-134 verbose headers   vary: 'Accept-Encoding' }
-135 silly get cb [ 304,
-135 silly get   { date: 'Thu, 08 Sep 2016 11:11:04 GMT',
-135 silly get     via: '1.1 varnish',
-135 silly get     'cache-control': 'max-age=300',
-135 silly get     etag: '"33TX4J3DNTGF7K41ZUV6OA182"',
-135 silly get     age: '93',
-135 silly get     connection: 'keep-alive',
-135 silly get     'x-served-by': 'cache-lcy1135-LCY',
-135 silly get     'x-cache': 'HIT',
-135 silly get     'x-cache-hits': '2',
-135 silly get     'x-timer': 'S1473333064.258340,VS0,VE0',
-135 silly get     vary: 'Accept-Encoding' } ]
-136 verbose etag https://registry.npmjs.org/bindings from cache
-137 verbose get saving bindings to C:\Users\maja\AppData\Roaming\npm-cache\registry.npmjs.org\bindings\.cache.json
-138 http 304 https://registry.npmjs.org/nan
-139 verbose headers { date: 'Thu, 08 Sep 2016 11:11:04 GMT',
-139 verbose headers   via: '1.1 varnish',
-139 verbose headers   'cache-control': 'max-age=300',
-139 verbose headers   etag: '"1OOZJAUMBQC59OINHZGMRRCSL"',
-139 verbose headers   age: '100',
-139 verbose headers   connection: 'keep-alive',
-139 verbose headers   'x-served-by': 'cache-lcy1120-LCY',
-139 verbose headers   'x-cache': 'HIT',
-139 verbose headers   'x-cache-hits': '5',
-139 verbose headers   'x-timer': 'S1473333064.262991,VS0,VE0',
-139 verbose headers   vary: 'Accept-Encoding' }
-140 silly get cb [ 304,
-140 silly get   { date: 'Thu, 08 Sep 2016 11:11:04 GMT',
-140 silly get     via: '1.1 varnish',
-140 silly get     'cache-control': 'max-age=300',
-140 silly get     etag: '"1OOZJAUMBQC59OINHZGMRRCSL"',
-140 silly get     age: '100',
-140 silly get     connection: 'keep-alive',
-140 silly get     'x-served-by': 'cache-lcy1120-LCY',
-140 silly get     'x-cache': 'HIT',
-140 silly get     'x-cache-hits': '5',
-140 silly get     'x-timer': 'S1473333064.262991,VS0,VE0',
-140 silly get     vary: 'Accept-Encoding' } ]
-141 verbose etag https://registry.npmjs.org/nan from cache
-142 verbose get saving nan to C:\Users\maja\AppData\Roaming\npm-cache\registry.npmjs.org\nan\.cache.json
-143 silly cache afterAdd nan@2.0.5
-144 verbose afterAdd C:\Users\maja\AppData\Roaming\npm-cache\nan\2.0.5\package\package.json not in flight; writing
-145 silly cache afterAdd bindings@1.2.1
-146 verbose afterAdd C:\Users\maja\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json not in flight; writing
-147 verbose afterAdd C:\Users\maja\AppData\Roaming\npm-cache\nan\2.0.5\package\package.json written
-148 verbose afterAdd C:\Users\maja\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json written
-149 silly install resolved [ { name: 'nan',
-149 silly install resolved     version: '2.0.5',
-149 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
-149 silly install resolved     main: 'include_dirs.js',
-149 silly install resolved     repository: { type: 'git', url: 'git://github.com/nodejs/nan.git' },
-149 silly install resolved     scripts:
-149 silly install resolved      { test: 'tap --gc test/js/*-test.js',
-149 silly install resolved        'rebuild-tests': 'pangyp rebuild --msvs_version=2013 --directory test',
-149 silly install resolved        docs: 'doc/.build.sh' },
-149 silly install resolved     contributors:
-149 silly install resolved      [ [Object],
-149 silly install resolved        [Object],
-149 silly install resolved        [Object],
-149 silly install resolved        [Object],
-149 silly install resolved        [Object],
-149 silly install resolved        [Object],
-149 silly install resolved        [Object] ],
-149 silly install resolved     devDependencies:
-149 silly install resolved      { bindings: '~1.2.1',
-149 silly install resolved        'node-gyp': '~2.0.2',
-149 silly install resolved        pangyp: '~2.2.0',
-149 silly install resolved        tap: '~0.7.1',
-149 silly install resolved        xtend: '~4.0.0' },
-149 silly install resolved     license: 'MIT',
-149 silly install resolved     gitHead: 'd13a2e9ce762fd130877b53c71d35963fa2cf689',
-149 silly install resolved     bugs: { url: 'https://github.com/nodejs/nan/issues' },
-149 silly install resolved     homepage: 'https://github.com/nodejs/nan#readme',
-149 silly install resolved     _id: 'nan@2.0.5',
-149 silly install resolved     _shasum: '365888014be1fd178db0cbfa258edf7b0cb1c408',
-149 silly install resolved     _from: 'nan@2.0.5',
-149 silly install resolved     _npmVersion: '2.13.3',
-149 silly install resolved     _nodeVersion: '3.0.0',
-149 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
-149 silly install resolved     maintainers: [ [Object], [Object] ],
-149 silly install resolved     dist:
-149 silly install resolved      { shasum: '365888014be1fd178db0cbfa258edf7b0cb1c408',
-149 silly install resolved        tarball: 'https://registry.npmjs.org/nan/-/nan-2.0.5.tgz' },
-149 silly install resolved     directories: {},
-149 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-2.0.5.tgz',
-149 silly install resolved     readme: 'ERROR: No README data found!' },
-149 silly install resolved   { name: 'bindings',
-149 silly install resolved     description: 'Helper module for loading your native module\'s .node file',
-149 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
-149 silly install resolved     version: '1.2.1',
-149 silly install resolved     author:
-149 silly install resolved      { name: 'Nathan Rajlich',
-149 silly install resolved        email: 'nathan@tootallnate.net',
-149 silly install resolved        url: 'http://tootallnate.net' },
-149 silly install resolved     repository:
-149 silly install resolved      { type: 'git',
-149 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
-149 silly install resolved     main: './bindings.js',
-149 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
-149 silly install resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
-149 silly install resolved     license: 'MIT',
-149 silly install resolved     gitHead: 'e404152ee27f8478ccbc7122ee051246e8e5ec02',
-149 silly install resolved     _id: 'bindings@1.2.1',
-149 silly install resolved     scripts: {},
-149 silly install resolved     _shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
-149 silly install resolved     _from: 'bindings@1.2.1',
-149 silly install resolved     _npmVersion: '1.4.14',
-149 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
-149 silly install resolved     maintainers: [ [Object], [Object] ],
-149 silly install resolved     dist:
-149 silly install resolved      { shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
-149 silly install resolved        tarball: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz' },
-149 silly install resolved     directories: {},
-149 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz',
-149 silly install resolved     readme: 'ERROR: No README data found!' } ]
-150 info install nan@2.0.5 into C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
-151 info install bindings@1.2.1 into C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
-152 info installOne nan@2.0.5
-153 verbose installOne of nan to C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt not in flight; installing
-154 info installOne bindings@1.2.1
-155 verbose installOne of bindings to C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt not in flight; installing
-156 verbose lock using C:\Users\maja\AppData\Roaming\npm-cache\_locks\nan-b9e8e13242a44a33.lock for C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan
-157 silly install write writing nan 2.0.5 to C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan
-158 verbose lock using C:\Users\maja\AppData\Roaming\npm-cache\_locks\bindings-8c339ddcd869f826.lock for C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings
-159 silly install write writing bindings 1.2.1 to C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings
-160 verbose unbuild node_modules\bcrypt\node_modules\nan
-161 silly gentlyRm C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan is being purged from base C:\Users\maja\Desktop\node-course\todo-api
-162 verbose gentlyRm don't care about contents; nuking C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan
-163 verbose tar unpack C:\Users\maja\AppData\Roaming\npm-cache\nan\2.0.5\package.tgz
-164 verbose tar unpacking to C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan
-165 silly gentlyRm C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan is being purged
-166 verbose gentlyRm don't care about contents; nuking C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan
-167 verbose unbuild node_modules\bcrypt\node_modules\bindings
-168 silly gunzTarPerm modes [ '777', '666' ]
-169 silly gentlyRm C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings is being purged from base C:\Users\maja\Desktop\node-course\todo-api
-170 verbose gentlyRm don't care about contents; nuking C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings
-171 verbose tar unpack C:\Users\maja\AppData\Roaming\npm-cache\bindings\1.2.1\package.tgz
-172 verbose tar unpacking to C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings
-173 silly gentlyRm C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings is being purged
-174 verbose gentlyRm don't care about contents; nuking C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings
-175 silly gunzTarPerm modes [ '777', '666' ]
-176 silly gunzTarPerm extractEntry package.json
-177 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
-178 silly gunzTarPerm extractEntry package.json
-179 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
-180 silly gunzTarPerm extractEntry README.md
-181 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
-182 silly gunzTarPerm extractEntry bindings.js
-183 silly gunzTarPerm modified mode [ 'bindings.js', 420, 438 ]
-184 silly gunzTarPerm extractEntry README.md
-185 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
-186 silly gunzTarPerm extractEntry include_dirs.js
-187 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
-188 silly gunzTarPerm extractEntry nan_converters.h
-189 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 438 ]
-190 silly gunzTarPerm extractEntry LICENSE.md
-191 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 438 ]
-192 silly gunzTarPerm extractEntry .dntrc
-193 silly gunzTarPerm modified mode [ '.dntrc', 436, 438 ]
-194 silly gunzTarPerm extractEntry appveyor.yml
-195 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 438 ]
-196 silly gunzTarPerm extractEntry doc/new.md
-197 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 438 ]
-198 silly gunzTarPerm extractEntry doc/.build.sh
-199 silly gunzTarPerm modified mode [ 'doc/.build.sh', 509, 511 ]
-200 silly gunzTarPerm extractEntry doc/buffers.md
-201 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 438 ]
-202 silly gunzTarPerm extractEntry doc/callback.md
-203 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 438 ]
-204 silly gunzTarPerm extractEntry doc/converters.md
-205 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 438 ]
-206 silly gunzTarPerm extractEntry doc/errors.md
-207 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 438 ]
-208 verbose write writing to C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings\package.json
-209 silly gunzTarPerm extractEntry doc/maybe_types.md
-210 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 438 ]
-211 silly gunzTarPerm extractEntry doc/methods.md
-212 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 438 ]
-213 info preinstall bindings@1.2.1
-214 verbose readDependencies loading dependencies from C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings\package.json
-215 silly gunzTarPerm extractEntry doc/asyncworker.md
-216 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 438 ]
-217 silly gunzTarPerm extractEntry doc/node_misc.md
-218 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 438 ]
-219 verbose readDependencies loading dependencies from C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings\package.json
-220 silly install resolved []
-221 verbose about to build C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings
-222 info build C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings
-223 silly gunzTarPerm extractEntry doc/persistent.md
-224 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 438 ]
-225 silly gunzTarPerm extractEntry doc/scopes.md
-226 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 438 ]
-227 info linkStuff bindings@1.2.1
-228 silly linkStuff bindings@1.2.1 has C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules as its parent node_modules
-229 verbose linkBins bindings@1.2.1
-230 verbose linkMans bindings@1.2.1
-231 verbose rebuildBundles bindings@1.2.1
-232 info install bindings@1.2.1
-233 silly gunzTarPerm extractEntry doc/script.md
-234 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 438 ]
-235 silly gunzTarPerm extractEntry doc/string_bytes.md
-236 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 438 ]
-237 info postinstall bindings@1.2.1
-238 verbose unlock done using C:\Users\maja\AppData\Roaming\npm-cache\_locks\bindings-8c339ddcd869f826.lock for C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings
-239 silly gunzTarPerm extractEntry doc/v8_internals.md
-240 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 438 ]
-241 silly gunzTarPerm extractEntry doc/v8_misc.md
-242 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 438 ]
-243 silly gunzTarPerm extractEntry nan.h
-244 silly gunzTarPerm modified mode [ 'nan.h', 436, 438 ]
-245 silly gunzTarPerm extractEntry nan_callbacks.h
-246 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 438 ]
-247 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
-248 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 438 ]
-249 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
-250 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 438 ]
-251 silly gunzTarPerm extractEntry nan_converters_43_inl.h
-252 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 438 ]
-253 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
-254 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 438 ]
-255 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
-256 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 438 ]
-257 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
-258 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 438 ]
-259 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
-260 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 438 ]
-261 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
-262 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 438 ]
-263 silly gunzTarPerm extractEntry nan_new.h
-264 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 438 ]
-265 silly gunzTarPerm extractEntry nan_object_wrap.h
-266 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 438 ]
-267 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
-268 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 438 ]
-269 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
-270 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 438 ]
-271 silly gunzTarPerm extractEntry nan_string_bytes.h
-272 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 438 ]
-273 silly gunzTarPerm extractEntry nan_weak.h
-274 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 438 ]
-275 silly gunzTarPerm extractEntry CHANGELOG.md
-276 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
-277 silly gunzTarPerm extractEntry tools/package.json
-278 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 438 ]
-279 silly gunzTarPerm extractEntry tools/README.md
-280 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 438 ]
-281 silly gunzTarPerm extractEntry tools/1to2.js
-282 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 511 ]
-283 verbose write writing to C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan\package.json
-284 info preinstall nan@2.0.5
-285 verbose readDependencies loading dependencies from C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan\package.json
-286 verbose readDependencies loading dependencies from C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan\package.json
-287 silly install resolved []
-288 verbose about to build C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan
-289 info build C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan
-290 info linkStuff nan@2.0.5
-291 silly linkStuff nan@2.0.5 has C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules as its parent node_modules
-292 verbose linkBins nan@2.0.5
-293 verbose linkMans nan@2.0.5
-294 verbose rebuildBundles nan@2.0.5
-295 info install nan@2.0.5
-296 info postinstall nan@2.0.5
-297 verbose unlock done using C:\Users\maja\AppData\Roaming\npm-cache\_locks\nan-b9e8e13242a44a33.lock for C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan
-298 verbose about to build C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
-299 info build C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
-300 info linkStuff bcrypt@0.8.5
-301 silly linkStuff bcrypt@0.8.5 has C:\Users\maja\Desktop\node-course\todo-api\node_modules as its parent node_modules
-302 verbose linkBins bcrypt@0.8.5
-303 verbose linkMans bcrypt@0.8.5
-304 verbose rebuildBundles bcrypt@0.8.5
-305 verbose rebuildBundles [ 'bindings', 'nan' ]
-306 info install bcrypt@0.8.5
-307 verbose unsafe-perm in lifecycle true
-308 info bcrypt@0.8.5 Failed to exec install script
-309 verbose unlock done using C:\Users\maja\AppData\Roaming\npm-cache\_locks\bcrypt-c4ff5668c553f3fe.lock for C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
-310 verbose stack Error: bcrypt@0.8.5 install: `node-gyp rebuild`
-310 verbose stack Exit status 1
-310 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:214:16)
-310 verbose stack     at emitTwo (events.js:87:13)
-310 verbose stack     at EventEmitter.emit (events.js:172:7)
-310 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
-310 verbose stack     at emitTwo (events.js:87:13)
-310 verbose stack     at ChildProcess.emit (events.js:172:7)
-310 verbose stack     at maybeClose (internal/child_process.js:818:16)
-310 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
-311 verbose pkgid bcrypt@0.8.5
-312 verbose cwd C:\Users\maja\Desktop\node-course\todo-api
-313 error Windows_NT 10.0.10586
-314 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "bcrypt" "--save"
-315 error node v4.2.4
-316 error npm  v2.14.12
-317 error code ELIFECYCLE
-318 error bcrypt@0.8.5 install: `node-gyp rebuild`
-318 error Exit status 1
-319 error Failed at the bcrypt@0.8.5 install script 'node-gyp rebuild'.
-319 error This is most likely a problem with the bcrypt package,
-319 error not with npm itself.
-319 error Tell the author that this fails on your system:
-319 error     node-gyp rebuild
-319 error You can get their info via:
-319 error     npm owner ls bcrypt
-319 error There is likely additional logging output above.
-320 verbose exit [ 1, true ]
-321 verbose unbuild node_modules\bcrypt
-322 info preuninstall bcrypt@0.8.5
-323 info uninstall bcrypt@0.8.5
-324 verbose unbuild rmStuff bcrypt@0.8.5 from C:\Users\maja\Desktop\node-course\todo-api\node_modules
-325 info postuninstall bcrypt@0.8.5
-326 silly gentlyRm C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt is being purged from base C:\Users\maja\Desktop\node-course\todo-api
-327 verbose gentlyRm don't care about contents; nuking C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
-328 silly vacuum-fs purging C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
-329 silly vacuum-fs quitting because other entries in C:\Users\maja\Desktop\node-course\todo-api\node_modules
+7 verbose install where, deps [ 'C:\\Users\\maja\\Desktop\\node-course\\todo-api',
+7 verbose install   [ 'bcrypt',
+7 verbose install     'bcrypt-nodejs',
+7 verbose install     'body-parser',
+7 verbose install     'express',
+7 verbose install     'pg',
+7 verbose install     'pg-hstore',
+7 verbose install     'sequelize',
+7 verbose install     'sqlite3',
+7 verbose install     'underscore',
+7 verbose install     'url-parse' ] ]
+8 verbose install where, peers [ 'C:\\Users\\maja\\Desktop\\node-course\\todo-api', [] ]
+9 verbose installManyTop reading for lifecycle C:\Users\maja\Desktop\node-course\todo-api\package.json
+10 info preinstall todo-api@1.0.0
+11 verbose installManyTop reading scoped package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt-nodejs\package.json
+12 verbose installManyTop reading scoped package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\body-parser\package.json
+13 verbose installManyTop reading scoped package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\express\package.json
+14 verbose installManyTop reading scoped package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\node-gyp\package.json
+15 verbose installManyTop reading scoped package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\pg\package.json
+16 verbose installManyTop reading scoped package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\pg-hstore\package.json
+17 verbose installManyTop reading scoped package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\sequelize\package.json
+18 verbose installManyTop reading scoped package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\sqlite3\package.json
+19 verbose installManyTop reading scoped package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\underscore\package.json
+20 verbose installManyTop reading scoped package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\url-parse\package.json
+21 info package.json bcrypt-nodejs@0.0.3 No license field.
+22 info package.json url-parse@1.1.3 No README data
+23 info package.json pg-hstore@2.3.2 No license field.
+24 verbose readDependencies loading dependencies from C:\Users\maja\Desktop\node-course\todo-api\package.json
+25 verbose targetResolver reading package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt-nodejs\package.json
+26 verbose targetResolver reading package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\body-parser\package.json
+27 verbose targetResolver reading package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\express\package.json
+28 verbose targetResolver reading package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\node-gyp\package.json
+29 verbose targetResolver reading package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\pg\package.json
+30 verbose targetResolver reading package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\pg-hstore\package.json
+31 verbose targetResolver reading package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\sequelize\package.json
+32 verbose targetResolver reading package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\sqlite3\package.json
+33 verbose targetResolver reading package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\underscore\package.json
+34 verbose targetResolver reading package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\url-parse\package.json
+35 verbose targetResolver reading package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\.bin\node-gyp\package.json
+36 verbose targetResolver reading package data from C:\Users\maja\Desktop\node-course\todo-api\node_modules\.bin\node-gyp.cmd\package.json
+37 verbose already installed skipping sequelize@^3.24.2 C:\Users\maja\Desktop\node-course\todo-api
+38 verbose already installed skipping sqlite3@^3.1.4 C:\Users\maja\Desktop\node-course\todo-api
+39 verbose already installed skipping underscore@^1.8.3 C:\Users\maja\Desktop\node-course\todo-api
+40 verbose already installed skipping url-parse@^1.1.3 C:\Users\maja\Desktop\node-course\todo-api
+41 silly cache add args [ 'bcrypt@0.8.5', null ]
+42 verbose cache add spec bcrypt@0.8.5
+43 silly cache add parsed spec Result {
+43 silly cache add   raw: 'bcrypt@0.8.5',
+43 silly cache add   scope: null,
+43 silly cache add   name: 'bcrypt',
+43 silly cache add   rawSpec: '0.8.5',
+43 silly cache add   spec: '0.8.5',
+43 silly cache add   type: 'version' }
+44 silly addNamed bcrypt@0.8.5
+45 verbose addNamed "0.8.5" is a plain semver version for bcrypt
+46 silly mapToRegistry name bcrypt
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+50 verbose addNameVersion registry:https://registry.npmjs.org/bcrypt not in flight; fetching
+51 verbose already installed skipping bcrypt-nodejs@0.0.3 C:\Users\maja\Desktop\node-course\todo-api
+52 verbose already installed skipping body-parser@^1.13.3 C:\Users\maja\Desktop\node-course\todo-api
+53 verbose already installed skipping express@^4.13.3 C:\Users\maja\Desktop\node-course\todo-api
+54 verbose already installed skipping pg@^4.4.1 C:\Users\maja\Desktop\node-course\todo-api
+55 verbose already installed skipping pg-hstore@^2.3.2 C:\Users\maja\Desktop\node-course\todo-api
+56 verbose request uri https://registry.npmjs.org/bcrypt
+57 verbose request no auth needed
+58 info attempt registry request try #1 at 10:03:38 PM
+59 verbose request id 95a2cadee6be385e
+60 verbose etag "398F192FUE7FBCG521B59OFYJ"
+61 http request GET https://registry.npmjs.org/bcrypt
+62 http 304 https://registry.npmjs.org/bcrypt
+63 verbose headers { date: 'Fri, 09 Sep 2016 20:03:38 GMT',
+63 verbose headers   via: '1.1 varnish',
+63 verbose headers   'cache-control': 'max-age=300',
+63 verbose headers   etag: '"398F192FUE7FBCG521B59OFYJ"',
+63 verbose headers   age: '96',
+63 verbose headers   connection: 'keep-alive',
+63 verbose headers   'x-served-by': 'cache-lcy1123-LCY',
+63 verbose headers   'x-cache': 'HIT',
+63 verbose headers   'x-cache-hits': '1',
+63 verbose headers   'x-timer': 'S1473451418.714076,VS0,VE0',
+63 verbose headers   vary: 'Accept-Encoding' }
+64 silly get cb [ 304,
+64 silly get   { date: 'Fri, 09 Sep 2016 20:03:38 GMT',
+64 silly get     via: '1.1 varnish',
+64 silly get     'cache-control': 'max-age=300',
+64 silly get     etag: '"398F192FUE7FBCG521B59OFYJ"',
+64 silly get     age: '96',
+64 silly get     connection: 'keep-alive',
+64 silly get     'x-served-by': 'cache-lcy1123-LCY',
+64 silly get     'x-cache': 'HIT',
+64 silly get     'x-cache-hits': '1',
+64 silly get     'x-timer': 'S1473451418.714076,VS0,VE0',
+64 silly get     vary: 'Accept-Encoding' } ]
+65 verbose etag https://registry.npmjs.org/bcrypt from cache
+66 verbose get saving bcrypt to C:\Users\maja\AppData\Roaming\npm-cache\registry.npmjs.org\bcrypt\.cache.json
+67 silly cache afterAdd bcrypt@0.8.5
+68 verbose afterAdd C:\Users\maja\AppData\Roaming\npm-cache\bcrypt\0.8.5\package\package.json not in flight; writing
+69 verbose afterAdd C:\Users\maja\AppData\Roaming\npm-cache\bcrypt\0.8.5\package\package.json written
+70 silly install resolved [ { name: 'bcrypt',
+70 silly install resolved     description: 'A bcrypt library for NodeJS.',
+70 silly install resolved     keywords:
+70 silly install resolved      [ 'bcrypt',
+70 silly install resolved        'password',
+70 silly install resolved        'auth',
+70 silly install resolved        'authentication',
+70 silly install resolved        'encryption',
+70 silly install resolved        'crypt',
+70 silly install resolved        'crypto' ],
+70 silly install resolved     main: './bcrypt',
+70 silly install resolved     version: '0.8.5',
+70 silly install resolved     author: { name: 'Nick Campbell', url: 'https://github.com/ncb000gt' },
+70 silly install resolved     engines: { node: '>= 0.6.0' },
+70 silly install resolved     repository:
+70 silly install resolved      { type: 'git',
+70 silly install resolved        url: 'git+https://github.com/ncb000gt/node.bcrypt.js.git' },
+70 silly install resolved     license: 'MIT',
+70 silly install resolved     bugs: { url: 'https://github.com/ncb000gt/node.bcrypt.js/issues' },
+70 silly install resolved     scripts:
+70 silly install resolved      { test: 'node-gyp configure build && nodeunit test',
+70 silly install resolved        install: 'node-gyp rebuild' },
+70 silly install resolved     dependencies: { bindings: '1.2.1', nan: '2.0.5' },
+70 silly install resolved     devDependencies: { nodeunit: '~0.9.1' },
+70 silly install resolved     contributors:
+70 silly install resolved      [ [Object],
+70 silly install resolved        [Object],
+70 silly install resolved        [Object],
+70 silly install resolved        [Object],
+70 silly install resolved        [Object],
+70 silly install resolved        [Object],
+70 silly install resolved        [Object],
+70 silly install resolved        [Object],
+70 silly install resolved        [Object],
+70 silly install resolved        [Object],
+70 silly install resolved        [Object],
+70 silly install resolved        [Object],
+70 silly install resolved        [Object],
+70 silly install resolved        [Object] ],
+70 silly install resolved     gypfile: true,
+70 silly install resolved     gitHead: '5d97708f06754d7d7989c67ba867002d10013615',
+70 silly install resolved     homepage: 'https://github.com/ncb000gt/node.bcrypt.js#readme',
+70 silly install resolved     _id: 'bcrypt@0.8.5',
+70 silly install resolved     _shasum: '8e5b81b4db80e944f440005979ca8d58a961861d',
+70 silly install resolved     _from: 'bcrypt@0.8.5',
+70 silly install resolved     _npmVersion: '2.13.3',
+70 silly install resolved     _nodeVersion: '3.0.0',
+70 silly install resolved     _npmUser: { name: 'defunctzombie', email: 'shtylman@gmail.com' },
+70 silly install resolved     dist:
+70 silly install resolved      { shasum: '8e5b81b4db80e944f440005979ca8d58a961861d',
+70 silly install resolved        tarball: 'https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.5.tgz' },
+70 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+70 silly install resolved     directories: {},
+70 silly install resolved     _resolved: 'https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.5.tgz',
+70 silly install resolved     readme: 'ERROR: No README data found!' } ]
+71 info install bcrypt@0.8.5 into C:\Users\maja\Desktop\node-course\todo-api
+72 info installOne bcrypt@0.8.5
+73 verbose installOne of bcrypt to C:\Users\maja\Desktop\node-course\todo-api not in flight; installing
+74 verbose lock using C:\Users\maja\AppData\Roaming\npm-cache\_locks\bcrypt-c4ff5668c553f3fe.lock for C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
+75 silly install write writing bcrypt 0.8.5 to C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
+76 verbose unbuild node_modules\bcrypt
+77 silly gentlyRm C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt is being purged from base C:\Users\maja\Desktop\node-course\todo-api
+78 verbose gentlyRm don't care about contents; nuking C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
+79 verbose tar unpack C:\Users\maja\AppData\Roaming\npm-cache\bcrypt\0.8.5\package.tgz
+80 verbose tar unpacking to C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
+81 silly gentlyRm C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt is being purged
+82 verbose gentlyRm don't care about contents; nuking C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
+83 silly gunzTarPerm modes [ '777', '666' ]
+84 silly gunzTarPerm extractEntry package.json
+85 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+86 silly gunzTarPerm extractEntry .npmignore
+87 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+88 silly gunzTarPerm extractEntry README.md
+89 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+90 silly gunzTarPerm extractEntry LICENSE
+91 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+92 silly gunzTarPerm extractEntry bcrypt.js
+93 silly gunzTarPerm modified mode [ 'bcrypt.js', 420, 438 ]
+94 silly gunzTarPerm extractEntry binding.gyp
+95 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+96 silly gunzTarPerm extractEntry .travis.yml
+97 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+98 silly gunzTarPerm extractEntry CHANGELOG.md
+99 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+100 silly gunzTarPerm extractEntry examples/async_compare.js
+101 silly gunzTarPerm modified mode [ 'examples/async_compare.js', 420, 438 ]
+102 silly gunzTarPerm extractEntry examples/forever_gen_salt.js
+103 silly gunzTarPerm modified mode [ 'examples/forever_gen_salt.js', 420, 438 ]
+104 silly gunzTarPerm extractEntry test/async.js
+105 silly gunzTarPerm modified mode [ 'test/async.js', 420, 438 ]
+106 silly gunzTarPerm extractEntry test/repetitions.js
+107 silly gunzTarPerm modified mode [ 'test/repetitions.js', 420, 438 ]
+108 silly gunzTarPerm extractEntry test/sync.js
+109 silly gunzTarPerm modified mode [ 'test/sync.js', 420, 438 ]
+110 silly gunzTarPerm extractEntry Makefile
+111 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+112 silly gunzTarPerm extractEntry src/bcrypt.cc
+113 silly gunzTarPerm modified mode [ 'src/bcrypt.cc', 420, 438 ]
+114 silly gunzTarPerm extractEntry src/bcrypt_node.cc
+115 silly gunzTarPerm modified mode [ 'src/bcrypt_node.cc', 420, 438 ]
+116 silly gunzTarPerm extractEntry src/blowfish.cc
+117 silly gunzTarPerm modified mode [ 'src/blowfish.cc', 420, 438 ]
+118 silly gunzTarPerm extractEntry src/node_blf.h
+119 silly gunzTarPerm modified mode [ 'src/node_blf.h', 420, 438 ]
+120 silly gunzTarPerm extractEntry werker.yml
+121 silly gunzTarPerm modified mode [ 'werker.yml', 420, 438 ]
+122 verbose write writing to C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\package.json
+123 info preinstall bcrypt@0.8.5
+124 verbose readDependencies loading dependencies from C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\package.json
+125 silly prepareForInstallMany adding bindings@1.2.1 from bcrypt dependencies
+126 silly prepareForInstallMany adding nan@2.0.5 from bcrypt dependencies
+127 verbose readDependencies loading dependencies from C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\package.json
+128 silly cache add args [ 'nan@2.0.5', null ]
+129 verbose cache add spec nan@2.0.5
+130 silly cache add parsed spec Result {
+130 silly cache add   raw: 'nan@2.0.5',
+130 silly cache add   scope: null,
+130 silly cache add   name: 'nan',
+130 silly cache add   rawSpec: '2.0.5',
+130 silly cache add   spec: '2.0.5',
+130 silly cache add   type: 'version' }
+131 silly addNamed nan@2.0.5
+132 verbose addNamed "2.0.5" is a plain semver version for nan
+133 silly mapToRegistry name nan
+134 silly mapToRegistry using default registry
+135 silly mapToRegistry registry https://registry.npmjs.org/
+136 silly mapToRegistry uri https://registry.npmjs.org/nan
+137 verbose addNameVersion registry:https://registry.npmjs.org/nan not in flight; fetching
+138 silly cache add args [ 'bindings@1.2.1', null ]
+139 verbose cache add spec bindings@1.2.1
+140 silly cache add parsed spec Result {
+140 silly cache add   raw: 'bindings@1.2.1',
+140 silly cache add   scope: null,
+140 silly cache add   name: 'bindings',
+140 silly cache add   rawSpec: '1.2.1',
+140 silly cache add   spec: '1.2.1',
+140 silly cache add   type: 'version' }
+141 silly addNamed bindings@1.2.1
+142 verbose addNamed "1.2.1" is a plain semver version for bindings
+143 silly mapToRegistry name bindings
+144 silly mapToRegistry using default registry
+145 silly mapToRegistry registry https://registry.npmjs.org/
+146 silly mapToRegistry uri https://registry.npmjs.org/bindings
+147 verbose addNameVersion registry:https://registry.npmjs.org/bindings not in flight; fetching
+148 verbose request uri https://registry.npmjs.org/nan
+149 verbose request no auth needed
+150 info attempt registry request try #1 at 10:03:39 PM
+151 verbose etag "1OOZJAUMBQC59OINHZGMRRCSL"
+152 http request GET https://registry.npmjs.org/nan
+153 verbose request uri https://registry.npmjs.org/bindings
+154 verbose request no auth needed
+155 info attempt registry request try #1 at 10:03:39 PM
+156 verbose etag "33TX4J3DNTGF7K41ZUV6OA182"
+157 http request GET https://registry.npmjs.org/bindings
+158 http 304 https://registry.npmjs.org/nan
+159 verbose headers { date: 'Fri, 09 Sep 2016 20:03:39 GMT',
+159 verbose headers   via: '1.1 varnish',
+159 verbose headers   'cache-control': 'max-age=300',
+159 verbose headers   etag: '"1OOZJAUMBQC59OINHZGMRRCSL"',
+159 verbose headers   age: '232',
+159 verbose headers   connection: 'keep-alive',
+159 verbose headers   'x-served-by': 'cache-lcy1121-LCY',
+159 verbose headers   'x-cache': 'HIT',
+159 verbose headers   'x-cache-hits': '2',
+159 verbose headers   'x-timer': 'S1473451419.239459,VS0,VE0',
+159 verbose headers   vary: 'Accept-Encoding' }
+160 silly get cb [ 304,
+160 silly get   { date: 'Fri, 09 Sep 2016 20:03:39 GMT',
+160 silly get     via: '1.1 varnish',
+160 silly get     'cache-control': 'max-age=300',
+160 silly get     etag: '"1OOZJAUMBQC59OINHZGMRRCSL"',
+160 silly get     age: '232',
+160 silly get     connection: 'keep-alive',
+160 silly get     'x-served-by': 'cache-lcy1121-LCY',
+160 silly get     'x-cache': 'HIT',
+160 silly get     'x-cache-hits': '2',
+160 silly get     'x-timer': 'S1473451419.239459,VS0,VE0',
+160 silly get     vary: 'Accept-Encoding' } ]
+161 verbose etag https://registry.npmjs.org/nan from cache
+162 verbose get saving nan to C:\Users\maja\AppData\Roaming\npm-cache\registry.npmjs.org\nan\.cache.json
+163 http 304 https://registry.npmjs.org/bindings
+164 verbose headers { date: 'Fri, 09 Sep 2016 20:03:39 GMT',
+164 verbose headers   via: '1.1 varnish',
+164 verbose headers   'cache-control': 'max-age=300',
+164 verbose headers   etag: '"33TX4J3DNTGF7K41ZUV6OA182"',
+164 verbose headers   age: '0',
+164 verbose headers   connection: 'keep-alive',
+164 verbose headers   'x-served-by': 'cache-lcy1132-LCY',
+164 verbose headers   'x-cache': 'HIT',
+164 verbose headers   'x-cache-hits': '1',
+164 verbose headers   'x-timer': 'S1473451419.247193,VS0,VE0',
+164 verbose headers   vary: 'Accept-Encoding' }
+165 silly get cb [ 304,
+165 silly get   { date: 'Fri, 09 Sep 2016 20:03:39 GMT',
+165 silly get     via: '1.1 varnish',
+165 silly get     'cache-control': 'max-age=300',
+165 silly get     etag: '"33TX4J3DNTGF7K41ZUV6OA182"',
+165 silly get     age: '0',
+165 silly get     connection: 'keep-alive',
+165 silly get     'x-served-by': 'cache-lcy1132-LCY',
+165 silly get     'x-cache': 'HIT',
+165 silly get     'x-cache-hits': '1',
+165 silly get     'x-timer': 'S1473451419.247193,VS0,VE0',
+165 silly get     vary: 'Accept-Encoding' } ]
+166 verbose etag https://registry.npmjs.org/bindings from cache
+167 verbose get saving bindings to C:\Users\maja\AppData\Roaming\npm-cache\registry.npmjs.org\bindings\.cache.json
+168 silly cache afterAdd bindings@1.2.1
+169 verbose afterAdd C:\Users\maja\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json not in flight; writing
+170 silly cache afterAdd nan@2.0.5
+171 verbose afterAdd C:\Users\maja\AppData\Roaming\npm-cache\nan\2.0.5\package\package.json not in flight; writing
+172 verbose afterAdd C:\Users\maja\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json written
+173 verbose afterAdd C:\Users\maja\AppData\Roaming\npm-cache\nan\2.0.5\package\package.json written
+174 silly install resolved [ { name: 'bindings',
+174 silly install resolved     description: 'Helper module for loading your native module\'s .node file',
+174 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+174 silly install resolved     version: '1.2.1',
+174 silly install resolved     author:
+174 silly install resolved      { name: 'Nathan Rajlich',
+174 silly install resolved        email: 'nathan@tootallnate.net',
+174 silly install resolved        url: 'http://tootallnate.net' },
+174 silly install resolved     repository:
+174 silly install resolved      { type: 'git',
+174 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+174 silly install resolved     main: './bindings.js',
+174 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+174 silly install resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
+174 silly install resolved     license: 'MIT',
+174 silly install resolved     gitHead: 'e404152ee27f8478ccbc7122ee051246e8e5ec02',
+174 silly install resolved     _id: 'bindings@1.2.1',
+174 silly install resolved     scripts: {},
+174 silly install resolved     _shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+174 silly install resolved     _from: 'bindings@1.2.1',
+174 silly install resolved     _npmVersion: '1.4.14',
+174 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+174 silly install resolved     maintainers: [ [Object], [Object] ],
+174 silly install resolved     dist:
+174 silly install resolved      { shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+174 silly install resolved        tarball: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz' },
+174 silly install resolved     directories: {},
+174 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz',
+174 silly install resolved     readme: 'ERROR: No README data found!' },
+174 silly install resolved   { name: 'nan',
+174 silly install resolved     version: '2.0.5',
+174 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+174 silly install resolved     main: 'include_dirs.js',
+174 silly install resolved     repository: { type: 'git', url: 'git://github.com/nodejs/nan.git' },
+174 silly install resolved     scripts:
+174 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+174 silly install resolved        'rebuild-tests': 'pangyp rebuild --msvs_version=2013 --directory test',
+174 silly install resolved        docs: 'doc/.build.sh' },
+174 silly install resolved     contributors:
+174 silly install resolved      [ [Object],
+174 silly install resolved        [Object],
+174 silly install resolved        [Object],
+174 silly install resolved        [Object],
+174 silly install resolved        [Object],
+174 silly install resolved        [Object],
+174 silly install resolved        [Object] ],
+174 silly install resolved     devDependencies:
+174 silly install resolved      { bindings: '~1.2.1',
+174 silly install resolved        'node-gyp': '~2.0.2',
+174 silly install resolved        pangyp: '~2.2.0',
+174 silly install resolved        tap: '~0.7.1',
+174 silly install resolved        xtend: '~4.0.0' },
+174 silly install resolved     license: 'MIT',
+174 silly install resolved     gitHead: 'd13a2e9ce762fd130877b53c71d35963fa2cf689',
+174 silly install resolved     bugs: { url: 'https://github.com/nodejs/nan/issues' },
+174 silly install resolved     homepage: 'https://github.com/nodejs/nan#readme',
+174 silly install resolved     _id: 'nan@2.0.5',
+174 silly install resolved     _shasum: '365888014be1fd178db0cbfa258edf7b0cb1c408',
+174 silly install resolved     _from: 'nan@2.0.5',
+174 silly install resolved     _npmVersion: '2.13.3',
+174 silly install resolved     _nodeVersion: '3.0.0',
+174 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+174 silly install resolved     maintainers: [ [Object], [Object] ],
+174 silly install resolved     dist:
+174 silly install resolved      { shasum: '365888014be1fd178db0cbfa258edf7b0cb1c408',
+174 silly install resolved        tarball: 'https://registry.npmjs.org/nan/-/nan-2.0.5.tgz' },
+174 silly install resolved     directories: {},
+174 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-2.0.5.tgz',
+174 silly install resolved     readme: 'ERROR: No README data found!' } ]
+175 info install bindings@1.2.1 into C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
+176 info install nan@2.0.5 into C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
+177 info installOne bindings@1.2.1
+178 verbose installOne of bindings to C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt not in flight; installing
+179 info installOne nan@2.0.5
+180 verbose installOne of nan to C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt not in flight; installing
+181 verbose lock using C:\Users\maja\AppData\Roaming\npm-cache\_locks\bindings-8c339ddcd869f826.lock for C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings
+182 verbose lock using C:\Users\maja\AppData\Roaming\npm-cache\_locks\nan-b9e8e13242a44a33.lock for C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan
+183 silly install write writing bindings 1.2.1 to C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings
+184 silly install write writing nan 2.0.5 to C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan
+185 verbose unbuild node_modules\bcrypt\node_modules\nan
+186 verbose unbuild node_modules\bcrypt\node_modules\bindings
+187 silly gentlyRm C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan is being purged from base C:\Users\maja\Desktop\node-course\todo-api
+188 verbose gentlyRm don't care about contents; nuking C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan
+189 silly gentlyRm C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings is being purged from base C:\Users\maja\Desktop\node-course\todo-api
+190 verbose gentlyRm don't care about contents; nuking C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings
+191 verbose tar unpack C:\Users\maja\AppData\Roaming\npm-cache\nan\2.0.5\package.tgz
+192 verbose tar unpacking to C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan
+193 silly gentlyRm C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan is being purged
+194 verbose gentlyRm don't care about contents; nuking C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan
+195 verbose tar unpack C:\Users\maja\AppData\Roaming\npm-cache\bindings\1.2.1\package.tgz
+196 verbose tar unpacking to C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings
+197 silly gentlyRm C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings is being purged
+198 verbose gentlyRm don't care about contents; nuking C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings
+199 silly gunzTarPerm modes [ '777', '666' ]
+200 silly gunzTarPerm modes [ '777', '666' ]
+201 silly gunzTarPerm extractEntry package.json
+202 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+203 silly gunzTarPerm extractEntry package.json
+204 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+205 silly gunzTarPerm extractEntry README.md
+206 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+207 silly gunzTarPerm extractEntry include_dirs.js
+208 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
+209 silly gunzTarPerm extractEntry README.md
+210 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+211 silly gunzTarPerm extractEntry bindings.js
+212 silly gunzTarPerm modified mode [ 'bindings.js', 420, 438 ]
+213 silly gunzTarPerm extractEntry nan_converters.h
+214 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 438 ]
+215 silly gunzTarPerm extractEntry LICENSE.md
+216 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 438 ]
+217 silly gunzTarPerm extractEntry .dntrc
+218 silly gunzTarPerm modified mode [ '.dntrc', 436, 438 ]
+219 silly gunzTarPerm extractEntry appveyor.yml
+220 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 438 ]
+221 silly gunzTarPerm extractEntry doc/new.md
+222 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 438 ]
+223 silly gunzTarPerm extractEntry doc/.build.sh
+224 silly gunzTarPerm modified mode [ 'doc/.build.sh', 509, 511 ]
+225 silly gunzTarPerm extractEntry doc/buffers.md
+226 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 438 ]
+227 silly gunzTarPerm extractEntry doc/callback.md
+228 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 438 ]
+229 verbose write writing to C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings\package.json
+230 silly gunzTarPerm extractEntry doc/converters.md
+231 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 438 ]
+232 silly gunzTarPerm extractEntry doc/errors.md
+233 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 438 ]
+234 info preinstall bindings@1.2.1
+235 verbose readDependencies loading dependencies from C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings\package.json
+236 silly gunzTarPerm extractEntry doc/maybe_types.md
+237 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 438 ]
+238 silly gunzTarPerm extractEntry doc/methods.md
+239 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 438 ]
+240 verbose readDependencies loading dependencies from C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings\package.json
+241 silly gunzTarPerm extractEntry doc/asyncworker.md
+242 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 438 ]
+243 silly gunzTarPerm extractEntry doc/node_misc.md
+244 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 438 ]
+245 silly install resolved []
+246 verbose about to build C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings
+247 info build C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings
+248 info linkStuff bindings@1.2.1
+249 silly linkStuff bindings@1.2.1 has C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules as its parent node_modules
+250 verbose linkBins bindings@1.2.1
+251 verbose linkMans bindings@1.2.1
+252 verbose rebuildBundles bindings@1.2.1
+253 silly gunzTarPerm extractEntry doc/persistent.md
+254 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 438 ]
+255 silly gunzTarPerm extractEntry doc/scopes.md
+256 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 438 ]
+257 info install bindings@1.2.1
+258 info postinstall bindings@1.2.1
+259 verbose unlock done using C:\Users\maja\AppData\Roaming\npm-cache\_locks\bindings-8c339ddcd869f826.lock for C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\bindings
+260 silly gunzTarPerm extractEntry doc/script.md
+261 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 438 ]
+262 silly gunzTarPerm extractEntry doc/string_bytes.md
+263 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 438 ]
+264 silly gunzTarPerm extractEntry doc/v8_internals.md
+265 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 438 ]
+266 silly gunzTarPerm extractEntry doc/v8_misc.md
+267 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 438 ]
+268 silly gunzTarPerm extractEntry nan.h
+269 silly gunzTarPerm modified mode [ 'nan.h', 436, 438 ]
+270 silly gunzTarPerm extractEntry nan_callbacks.h
+271 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 438 ]
+272 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+273 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 438 ]
+274 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+275 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 438 ]
+276 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+277 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 438 ]
+278 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+279 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 438 ]
+280 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+281 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 438 ]
+282 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+283 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 438 ]
+284 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+285 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 438 ]
+286 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+287 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 438 ]
+288 silly gunzTarPerm extractEntry nan_new.h
+289 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 438 ]
+290 silly gunzTarPerm extractEntry nan_object_wrap.h
+291 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 438 ]
+292 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+293 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 438 ]
+294 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+295 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 438 ]
+296 silly gunzTarPerm extractEntry nan_string_bytes.h
+297 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 438 ]
+298 silly gunzTarPerm extractEntry nan_weak.h
+299 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 438 ]
+300 silly gunzTarPerm extractEntry CHANGELOG.md
+301 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+302 silly gunzTarPerm extractEntry tools/package.json
+303 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 438 ]
+304 silly gunzTarPerm extractEntry tools/README.md
+305 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 438 ]
+306 silly gunzTarPerm extractEntry tools/1to2.js
+307 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 511 ]
+308 verbose write writing to C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan\package.json
+309 info preinstall nan@2.0.5
+310 verbose readDependencies loading dependencies from C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan\package.json
+311 verbose readDependencies loading dependencies from C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan\package.json
+312 silly install resolved []
+313 verbose about to build C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan
+314 info build C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan
+315 info linkStuff nan@2.0.5
+316 silly linkStuff nan@2.0.5 has C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules as its parent node_modules
+317 verbose linkBins nan@2.0.5
+318 verbose linkMans nan@2.0.5
+319 verbose rebuildBundles nan@2.0.5
+320 info install nan@2.0.5
+321 info postinstall nan@2.0.5
+322 verbose unlock done using C:\Users\maja\AppData\Roaming\npm-cache\_locks\nan-b9e8e13242a44a33.lock for C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt\node_modules\nan
+323 verbose about to build C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
+324 info build C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
+325 info linkStuff bcrypt@0.8.5
+326 silly linkStuff bcrypt@0.8.5 has C:\Users\maja\Desktop\node-course\todo-api\node_modules as its parent node_modules
+327 verbose linkBins bcrypt@0.8.5
+328 verbose linkMans bcrypt@0.8.5
+329 verbose rebuildBundles bcrypt@0.8.5
+330 verbose rebuildBundles [ 'bindings', 'nan' ]
+331 info install bcrypt@0.8.5
+332 verbose unsafe-perm in lifecycle true
+333 info bcrypt@0.8.5 Failed to exec install script
+334 verbose unlock done using C:\Users\maja\AppData\Roaming\npm-cache\_locks\bcrypt-c4ff5668c553f3fe.lock for C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
+335 verbose stack Error: bcrypt@0.8.5 install: `node-gyp rebuild`
+335 verbose stack Exit status 1
+335 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:214:16)
+335 verbose stack     at emitTwo (events.js:87:13)
+335 verbose stack     at EventEmitter.emit (events.js:172:7)
+335 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+335 verbose stack     at emitTwo (events.js:87:13)
+335 verbose stack     at ChildProcess.emit (events.js:172:7)
+335 verbose stack     at maybeClose (internal/child_process.js:818:16)
+335 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+336 verbose pkgid bcrypt@0.8.5
+337 verbose cwd C:\Users\maja\Desktop\node-course\todo-api
+338 error Windows_NT 10.0.10586
+339 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+340 error node v4.2.4
+341 error npm  v2.14.12
+342 error code ELIFECYCLE
+343 error bcrypt@0.8.5 install: `node-gyp rebuild`
+343 error Exit status 1
+344 error Failed at the bcrypt@0.8.5 install script 'node-gyp rebuild'.
+344 error This is most likely a problem with the bcrypt package,
+344 error not with npm itself.
+344 error Tell the author that this fails on your system:
+344 error     node-gyp rebuild
+344 error You can get their info via:
+344 error     npm owner ls bcrypt
+344 error There is likely additional logging output above.
+345 verbose exit [ 1, true ]
+346 verbose unbuild node_modules\bcrypt
+347 info preuninstall bcrypt@0.8.5
+348 info uninstall bcrypt@0.8.5
+349 verbose unbuild rmStuff bcrypt@0.8.5 from C:\Users\maja\Desktop\node-course\todo-api\node_modules
+350 info postuninstall bcrypt@0.8.5
+351 silly gentlyRm C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt is being purged from base C:\Users\maja\Desktop\node-course\todo-api
+352 verbose gentlyRm don't care about contents; nuking C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
+353 silly vacuum-fs purging C:\Users\maja\Desktop\node-course\todo-api\node_modules\bcrypt
+354 silly vacuum-fs quitting because other entries in C:\Users\maja\Desktop\node-course\todo-api\node_modules
