@@ -4,6 +4,7 @@ var _ = require('underscore');
 var db = require('./db.js');
 var bcrypt = require('bcrypt');
 
+
 var app = express();
 var PORT = process.env.PORT || 3000;
 var todos = [];
@@ -15,15 +16,15 @@ app.get('/', function (req, res) {
 	res.send('TODO API Root');
 });
 
-// GET /todos?complited=false&q=work
+// GET /todos?completed=false&q=work
 app.get('/todos', function (req, res) {
 	var query = req.query;
 	var where = {}; 
 
-	if (query.hasOwnProperty('complited') && query.complited === 'true') {
-		where.complited = true;
-	} else if (query.hasOwnProperty('complited') && query.complited === 'false') {
-		where.complited = false;
+	if (query.hasOwnProperty('completed') && query.completed === 'true') {
+		where.completed = true;
+	} else if (query.hasOwnProperty('completed') && query.completed === 'false') {
+		where.completed = false;
 	}
 
 	if (query.hasOwnProperty('q') && query.q.length > 0 ) {
@@ -58,7 +59,7 @@ app.get('/todos/:id', function (req, res) {
 
 // POST  /todos
 app.post('/todos', function (req, res) {
-	var body = _.pick(req.body, 'description', 'complited'); // use _.pick to only pick description and complited
+	var body = _.pick(req.body, 'description', 'completed'); // use _.pick to only pick description and complited
 
 
 db.todo.create(body).then(function (todo) {
@@ -95,14 +96,14 @@ app.delete('/todos/:id', function (req, res) {
 // PUT/todos/:id
 app.put('/todos/:id', function  (req, res) {
 	var todoId = parseInt(req.params.id, 10);
-	var body = _.pick(req.body, 'description', 'complited');
+	var body = _.pick(req.body, 'description', 'completed');
 	var attributes = {};
 
 
-	// body.hasOwnProperty('complited');
+	// body.hasOwnProperty('completed');
 
-	if (body.hasOwnProperty('complited') ) {
-		attributes.complited = body.complited;
+	if (body.hasOwnProperty('completed') ) {
+		attributes.completed = body.completed;
 	} 
 
 	if (body.hasOwnProperty('descrition')) {
@@ -110,7 +111,7 @@ app.put('/todos/:id', function  (req, res) {
 	} 
 
 	db.todo.findById(todoId).then(function (todo) {
-		if (todo ) {
+		if (todo) {
 		 todo.update(attributes).then(function (todo) {
 		res.json(todo.toJSON());
 	}, function (e) {
@@ -140,8 +141,15 @@ app.post('/users/login', function (req, res) {
 	var body = _.pick(req.body, 'email', 'password');
 
 	db.user.authenticate(body).then(function (user) {
-		res.json(user.toPublicJSON());
-	}, function (e) {
+		var token = user.generateToken('authentication');
+
+		if (token) {
+			res.header('Auth', token).json(user.toPublicJSON());
+		} else {
+				res.status(401).send();
+		}
+		
+	}, function () {
 		res.status(401).send();
 	});
 
